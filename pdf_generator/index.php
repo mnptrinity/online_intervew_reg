@@ -3,7 +3,7 @@ require "fpdf.php";
 
 $a=$_POST['date1'];
 $b=$_POST['date2'];
-$db = new PDO('mysql:host=localhost;dbname=Sakthi','root','Mohan@007');
+$db = new PDO('mysql:host=localhost;dbname=Sakthi','root','');
 
 //<!--emp-->
     class myPDF extends FPDF{
