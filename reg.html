@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>SHAKTHI AUTO COMPONENTS</title>
+
+<!-- Accept only Numbers in text Feild ) -->
+
+<script type="application/javascript">
+
+  function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode < 47 || charCode > 57) 
+            
+            return false;         
+         	return true;
+      }
+</script>                                                                                                                                                                                
+
+<!-- Accept only Numbers in text Feild and . symbol ) -->
+
+<script type="application/javascript">
+
+  function isdecimal(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if ( ( charCode > 31 ) && (charCode < 45 || charCode > 47) && (charCode < 47 || charCode > 57) )
+            
+            return false;         
+         	return true;
+      }
+
+</script>
+
+
+<!-- Exceeding Maximum Characters ) -->
+
+<script type="application/javascript">
+
+	function charMax()
+	{
+		if (CarrerForm.Initial.value.length >= 50)
+		{ 
+        	alert("You have exceeded the maximum characters allowed."); 
+        	CarrerForm.Initial.focus(); 	
+        	return false;
+        }
+		
+		return true;		
+	}
+	
+</script>
+
+<!-- Disabling Multi Textbox on clicking checkbox ) -->
+
+<script type="text/javascript"> 
+	function disablefields()
+	{ 
+		if (document.getElementById('sameadd').checked == 1)
+		{ 
+			document.getElementById('PAddress1').disabled='disabled'; 
+			document.getElementById('PAddress1').value='disabled';
+			document.getElementById('PAddress2').disabled='disabled'; 
+			document.getElementById('PAddress2').value='disabled';
+			document.getElementById('PAddress3').disabled='disabled'; 
+			document.getElementById('PAddress3').value='disabled';
+			document.getElementById('PAddress4').disabled='disabled'; 
+			document.getElementById('PAddress4').value='disabled';
+			document.getElementById('PAddress5').disabled='disabled'; 
+			document.getElementById('PAddress5').value='disabled';
+			document.getElementById('PAddress6').disabled='disabled'; 
+			document.getElementById('PAddress6').value='disabled';
+		}
+		else
+		{ 
+			document.getElementById('PAddress1').disabled=''; 
+			document.getElementById('PAddress1').value='';
+			document.getElementById('PAddress2').disabled=''; 
+			document.getElementById('PAddress2').value='';
+			document.getElementById('PAddress3').disabled=''; 
+			document.getElementById('PAddress3').value='';
+			document.getElementById('PAddress4').disabled=''; 
+			document.getElementById('PAddress4').value='';
+			document.getElementById('PAddress5').disabled=''; 
+			document.getElementById('PAddress5').value='';
+			document.getElementById('PAddress6').disabled='';
+			document.getElementById('PAddress6').value='';
+		} 
+	} 
+</script>
+
+<!-- Validating a feild is empty or not on clicking submit button  -->
+
+<script language="javascript">
+
+	function empty()
+	{
+             //alert("Hai i am");
+        if ( document.getElementById("CAddress2").value == "" )
+    	{
+        	alert("Please Enter Your Address Line 2");
+        	document.getElementById("CAddress2").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("Initial").value == "" )
+    	{
+        	alert("Please Select the  Initial of yours");
+        	document.getElementById("Initial").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("CandName").value == "" )
+    	{
+        	alert("Please Enter Your Name");
+        	document.getElementById("CandName").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("FatherName").value == "" )
+    	{
+        	alert("Please Enter Your Father/Husband's Name");
+        	document.getElementById("FatherName").focus();
+        	return false;
+    	};
+    	
+    	/*if ( document.getElementById("CanDob").value == "" )
+    	{
+        	alert("Please Select Your DOB");
+        	document.getElementById("CanDob").focus();
+        	return false;
+    	};*/
+    	
+    	if ( document.getElementById("physic").checked == "" )
+    	{
+        	alert("Please Enter Your previous physical health status ");
+        	document.getElementById("physic").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("Gender").value == "" )
+    	{
+        	alert("Please Select Gender");
+        	document.getElementById("Gender").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("Mstatus").value == "" )
+    	{
+        	alert("Please Select Martial Status");
+        	document.getElementById("Mstatus").focus();
+        	return false;
+    	};
+
+		if ( document.getElementById("MobileNo").value == "" )
+    	{
+        	alert("Please Enter Your Mobile Number");
+        	document.getElementById("MobileNo").focus();
+        	return false;
+    	};
+
+		if ( document.getElementById("Cpincode").value == "" )
+    	{
+        	alert("Please Enter your pincode");
+        	document.getElementById("Cpincode").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("MailID").value == "" )
+    	{
+        	alert("Please Enter Your E - Mail");
+        	document.getElementById("MailID").focus();
+        	return false;
+    	};
+
+		if ( document.getElementById("aadharno").value == "" )
+    	{
+        	alert("Please Enter Your Aadhar Number");
+        	document.getElementById("aadharno").focus();
+        	return false;
+    	};    	
+    	
+    	if ( document.getElementById("CAddress1").value == "" )
+    	{
+        	alert("Please Enter Your Address Line 1");
+        	document.getElementById("CAddress1").focus();
+        	return false;
+    	};
+    			
+		if ( document.getElementById("CAddress3").value == "" )
+    	{
+        	alert("Please Enter Your Address Line 3");
+        	document.getElementById("CAddress3").focus();
+        	return false;
+    	};
+    	
+		if ( document.getElementById("cat").value == "" )
+    	{
+        	alert("Please Select  Your State");
+        	document.getElementById("cat").focus();
+        	return false;
+    	};
+
+		if ( document.getElementById("subcat").value == "" )
+    	{
+        	alert("Please Select Your District");
+        	document.getElementById("subcat").focus();
+        	return false;
+    	};
+
+		if ( document.getElementById("Interest").value == "" )
+    	{
+        	alert("Please Enter Your Interest");
+        	document.getElementById("Interest").focus();
+        	return false;
+    	};
+        if ( document.getElementById("Joining").selectedIndex == 0 )
+    	{
+        	alert("Please select Your joining dates based on weeks ");
+        	document.getElementById("Joining").focus();
+        	return false;
+    	};
+        if ( document.getElementById("Salary1").value == "" )
+    	{
+        	alert("Please Enter Your expected salary");
+        	document.getElementById("Salary1").focus();
+        	return false;
+    	};
+        
+    	if ( document.getElementById("upCertificate").value == "" )
+    	{
+        	alert("Please attach your Aadhar");
+        	document.getElementById("upCertificate").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("upCertificates").value == "" )
+    	{
+        	alert("Please attach your certificates");
+        	document.getElementById("upCertificates").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("upSign").value == "" )
+    	{
+        	alert("Please attach your signature");
+        	document.getElementById("upSign").focus();
+        	return false;
+    	};
+    	
+    	if ( document.getElementById("upImage").value == "" )
+    	{
+        	alert("Please attach your Photo");
+        	document.getElementById("upImage").focus();
+        	return false;
+    	};
+   	};
+	
+</script>
+
+<!-- ADDING AND DELETING ROWS FOR LANGUAGE KNOWN -->
+
+<script language="javascript" >
+
+	function addElement() 
+	{
+		var Cnt=parseInt(document.CarrerForm.hidcount.value)+1;
+		var ni = document.getElementById('Language');
+		var numi = document.getElementById('theValue'); 
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		numi.value = num;
+		var newdiv = document.createElement('div');
+		var divIdName = 'Language'+num;
+		newdiv.setAttribute('id',divIdName);
+		newdiv.innerHTML = '<div class="form-style-2"><table width="80%" border="0" cellspacing="0" align="center"><tr><td width="23%" height="50"><table width="100%"><tr><td colspan="2"><input type="text" name="canLKnown[]" id="canLKnown[]" value="" maxlength="20" class="input-field"></td></tr></table></td><td width="21%" align="center"><input type="checkbox" name="Read[]" id="Read[]" value="Y"  class="form-control"></td><td width="21%" align="center"><input type="checkbox" name="Write[]" id="Write[]" value="Y"  class="form-control"></td><td width="21%" align="center"><input type="checkbox" name="Speak[]" id="Speak[]" value="Y"  class="form-control"></td><td><input type="hidden" name="hidcount" value="1"><input type="hidden" name="hidid_code[]" value=""><input type="hidden" value="0" id="theValue" name="hidvall" /><input type="button" name="removebutten" class="butten2" style="width:65px;" onClick="javascript:removeElement(\''+divIdName+'\');"  value="Delete" /></td></tr></table></div>';
+	
+	  	document.CarrerForm.hidcount.value=parseInt(document.CarrerForm.hidcount.value)+1;
+	  	document.CarrerForm.hidvallang.value=num+1;
+	  	ni.appendChild(newdiv);
+	}
+	
+	function removeElement(divNum)
+	{
+		var d = document.getElementById('Language');
+		var olddiv = document.getElementById(divNum);
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		d.removeChild(olddiv);
+		document.getElementById('theValue').value= document.getElementById('theValue').value-1;
+		document.CarrerForm.hidcount.value=parseInt(document.CarrerForm.hidcount.value)-1;
+		document.CarrerForm.hidvallang.value=num-1;
+	}
+	
+</script>
+
+<!-- ADDING AND DELETING ROWS FOR EXPERIANCE -->
+
+
+<script language="javascript" >
+
+	function removeElementExp(divNum) 
+	{
+		var d = document.getElementById('Experience');
+		var olddiv = document.getElementById(divNum);
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		d.removeChild(olddiv);
+		document.getElementById('theValue').value= document.getElementById('theValue').value-1;
+		document.CarrerForm.hidcountE.value=parseInt(document.CarrerForm.hidcountE.value)-1;
+		document.CarrerForm.hidvalExp.value=num-1;
+	}
+
+</script>
+
+<!-- ADDING AND DELETING ROWS FOR EDUCATION -->
+
+<script language="javascript" >
+	
+	function addElementEdu() 
+	{
+		var Cnt=parseInt(document.CarrerForm.hidcountE.value)+1;
+		var ni = document.getElementById('Education');
+		var numi = document.getElementById('theValue'); 
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		numi.value = num;
+		var newdiv = document.createElement('div');
+		var divIdName = 'Education'+num;
+		newdiv.setAttribute('id',divIdName);
+		newdiv.innerHTML = '<div class="form-style-2"><div id="Education"><table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2"> <tr> <td width="40" style="height: 30px"><p align="center" > <select name="de[]" id="candeg[]" style="width:70px; height: 30px" class="input-field" > <option value="">Select Degree</option> <option value=B.A.>B.A.</option><option value=B.A.M.S.>B.A.M.S.</option><option value=B.Arch>B.Arch</option><option value=B.B.A.>B.B.A.</option><option value=B.B.M.>B.B.M.</option><option value=B.C.A.>B.C.A.</option><option value=B.Com.>B.Com.</option><option value=B.D.S.>B.D.S.</option><option value=B.Des. / B.D.>B.Des. / B.D.</option><option value=B.E. / B.Tech.>B.E. / B.Tech.</option><option value=B.Ed.>B.Ed.</option><option value=B.F.Sc./ B.Sc.(Fisheries). >B.F.Sc./ B.Sc. (Fisheries).</option><option value=B.H.M.S.>B.H.M.S.</option><option value=B.Lib. / B.Lib.Sc.>B.Lib. / B.Lib.Sc.</option><option value=B.M.C. / B.M.M.>B.M.C. / B.M.M.</option><option value=B.Nursing>B.Nursing</option><option value=B.P.Ed.>B.P.Ed.</option><option value=B.P.T.>B.P.T.</option><option value=B.Pharm / B.Pharma.>B.Pharm / B.Pharma.</option><option value=B.Sc.>B.Sc.</option><option value=B.V.Sc. & A.H. / B.V.Sc>B.V.Sc. & A.H. / B.V.Sc</option><option value=BFA / BVA>BFA / BVA</option><option value=BSW / B.A. (SW)>BSW / B.A. (SW)</option><option value=CAIIB>CAIIB</option><option value=D.M.>D.M.</option><option value=Diploma>Diploma</option><option value=HSC>HSC</option><option value=L.L.B.>L.L.B.</option><option value=L.L.M.>L.L.M.</option><option value=M.A.>M.A.</option><option value=M.Arch.>M.Arch.</option><option value=M.B.A.>M.B.A.</option><option value=M.B.B.S.>M.B.B.S.</option><option value=M.C.A.>M.C.A.</option><option value=M.Ch.>M.Ch.</option><option value=M.Com.>M.Com.</option><option value=M.D.>M.D.</option><option value=M.D. (Homoeopathy)>M.D. (Homoeopathy)</option><option value=M.D.S.>M.D.S.</option><option value=M.Des./ M.Design.>M.Des./ M.Design.</option><option value=M.E./ M.Tech.>M.E./ M.Tech.</option><option value=M.Ed.>M.Ed.</option><option value=M.Lib./ M.Lib.Sc.>M.Lib./ M.Lib.Sc.</option><option value=M.M.C / M.M.M.>M.M.C / M.M.M.</option><option value=M.P.Ed. / M.P.E.>M.P.Ed. / M.P.E.</option><option value=M.P.T.>M.P.T.</option><option value=M.Pharm>M.Pharm</option><option value=M.Phil.>M.Phil.</option><option value=M.S.>M.S.</option><option value=M.S.W. / M.A. (SW)>M.S.W. / M.A. (SW)</option><option value=M.Sc.>M.Sc.</option><option value=M.Sc. (Agriculture)>M.Sc. (Agriculture)</option><option value=M.V.Sc.>M.V.Sc.</option><option value=MFA / MVA>MFA / MVA</option><option value=MS>MS</option><option value=Others>Others</option><option value=Ph.D.>Ph.D.</option><option value=Pharm.D>Pharm.D</option><option value=SSLC>SSLC</option> </select></p></td><td width="100" style="height: 30px"><p align="center" ><input type="text" name="un[]" id="caninst[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="100" style="height: 30px"><p align="center"><input type="text" name="ma[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="40" style="height: 30px"><select name="from2[]" id="CFrom[]" style="width:80px; height: 30px" class="input-field" > <option value="">Select Year</option> <option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> </select></td><td width="40" style="height: 30px"><select name="to2[]" id="CTo[]" style="width:80px; height: 30px" class="input-field" > <option value="">Select Year</option> <option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> </Select></td><td width="40" style="height: 30px"><p align="center"><input type="hidden" name="hidcountEd" value="1"><input type="hidden" name="hidcountEd1" value="1"><input type="hidden" value="0" id="theValue" name="hidvalE"/><input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementEdu();" style="width:60px;"/><input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu"/></p></td></tr></table></div><br/></div>';
+
+		document.CarrerForm.hidcountEd.value=parseInt(document.CarrerForm.hidcountEd.value)+1;
+		document.CarrerForm.hidvalEdu.value=num+1;
+		ni.appendChild(newdiv);
+	}
+	
+	function addElementRel() 
+	{
+		var Cnt=parseInt(document.CarrerForm.hidcountE.value)+1;
+		var ni = document.getElementById('Relation');
+		var numi = document.getElementById('theValue'); 
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		numi.value = num;
+		var newdiv = document.createElement('div');
+		var divIdName = 'Education'+num;
+		newdiv.setAttribute('id',divIdName);
+		newdiv.innerHTML = '<div class="form-style-2"><div id="Education"><table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2"> <tr><td width="100" style="height: 30px"><p align="center" ><input type="text" name="item_name[]" id="caninst[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="100" style="height: 30px"><p align="center"><input type="text" name="item_price[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="100" style="height: 30px"><p align="center"><input type="text" name="item_size[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="40" style="height: 30px"><p align="center"><input type="hidden" name="hidcountEd" value="1"><input type="hidden" name="hidcountEd1" value="1"><input type="hidden" value="0" id="theValue" name="hidvalE"/><input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementRel();" style="width:60px;"/><input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu"/></p></td></tr></table></div><br/></div>';
+	
+		document.CarrerForm.hidcountEd.value=parseInt(document.CarrerForm.hidcountEd.value)+1;
+		document.CarrerForm.hidvalEdu.value=num+1;
+		ni.appendChild(newdiv);
+	}
+	
+	function addElementEst() 
+	{
+		var Cnt=parseInt(document.CarrerForm.hidcountE.value)+1;
+		var ni = document.getElementById('Establishment');
+		var numi = document.getElementById('theValue'); 
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		numi.value = num;
+		var newdiv = document.createElement('div');
+		var divIdName = 'Education'+num;
+		newdiv.setAttribute('id',divIdName);
+		newdiv.innerHTML = '<div class="form-style-2"><div id="Education"><table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2"> <tr><td width="100" style="height: 30px"><p align="center" ><input type="text" name="t1[]" id="caninst[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="100" style="height: 30px"><p align="center"><input type="text" name="k1[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"/></p></td><td width="40" style="height: 30px"><select name="from1[]" id="CFrom[]" style="width:80px; height: 30px" class="input-field" > <option value="">Select Year</option> <option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> </Select></td><td width="40" style="height: 30px"><select name="to1[]" id="CTo[]" style="width:80px; height: 30px" class="input-field" > <option value="">Select Year</option> <option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> </Select></td><td width="40" style="height: 30px"><p align="center"><input type="hidden" name="hidcountEd" value="1"><input type="hidden" name="hidcountEd1" value="1"><input type="hidden" value="0" id="theValue" name="hidvalE"/><input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementEst();" style="width:60px;"/><input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu"/></p></td></tr></table></div><br/></div>';
+	
+		document.CarrerForm.hidcountEd.value=parseInt(document.CarrerForm.hidcountEd.value)+1;
+		document.CarrerForm.hidvalEdu.value=num+1;
+		ni.appendChild(newdiv);
+	}
+	
+	function removeElementEdu(divNum) 
+	{
+		var d = document.getElementById('Education');
+		var olddiv = document.getElementById(divNum);
+		var num = (document.getElementById('theValue').value -1)+ 2;
+		d.removeChild(olddiv);
+		document.getElementById('theValue').value= document.getElementById('theValue').value-1;
+		document.CarrerForm.hidcountEd.value=parseInt(document.CarrerForm.hidcountEd.value)-1;
+		document.CarrerForm.hidvalEdu.value=num-1;
+	}
+
+</script>
+
+<style type="text/css">
+
+.form-style-2
+{
+	max-width: 100%;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 select,
+.form-style-2 .textarea-field, 
+.form-style-2 .select-field
+{
+	width: 70%;	
+}
+
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 select,
+.form-style-2 .textarea-field, 
+.form-style-2 .select-field
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus
+{
+	border: 1px solid #0C0;
+}
+</style>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+<form name="CarrerForm" enctype="multipart/form-data" action="regfinal.php" method="post" onSubmit="return empty()">
+	
+	<table width="80%" style=" padding-bottom:3px; height: 50px;" border="0" cellpadding="5" cellspacing="0"  align="center">
+		<tr height="20">
+			<td colspan="1" align="CENTER" style=" font-size:25px; font-weight:bold; width: 5%;">
+			<img src="http://www.drmti.in/wp-content/uploads/2015/11/sakthi-group.jpg" alt="SAKTHI Logo"></td>
+
+			<tr><td colspan="3" align="CENTER" style=" font-size:25px; font-weight:bold; width: 21%;">SAKTHI AUTO COMPONENT LIMITED</td><br /></tr>
+			<tr><td colspan="3" align="CENTER" style=" font-size:18px; font-weight:bold; width: 21%;">MUKASI PALLAGOUNDENPALAYAM - 638 056</td><br /></tr>
+			<tr><td colspan="3" align="CENTER" style=" font-size:13px; font-weight:bold; width: 21%;">Uthukuli Taluk, Tiruppur District - Tamilnadu</td></tr> 
+	</table>
+	<br><br>
+	<table width="80%" style=" padding-bottom:3px;" border="0" cellpadding="5" cellspacing="0"  align="center">	
+		<tr style="background:#e7e7e7;" height="35">
+        	<td colspan="4" align="left"><strong style=" color:#C60000; font-size:14px;" >JOB APPLICATION FORM</strong></td>
+   	    </tr>
+	   	    
+	</table>
+	
+	<br>
+	<div class="form-style-2">
+		<table width="80%" border="0" cellspacing="10" cellpadding="0" align="center">
+		        
+			<tr>
+				<td  height="40" style="width: 21%"><strong style="font-size: 15px;">Name in Capitals</strong><span style="color:red">*</span></td>
+				<td style="width: 27%">
+				<select name="Title" id="Title" class="input-field" style="width:32px;">
+		        	<option value="">Select</option>
+		        	<option value="Mr.">Mr.</option>
+		        	<option value="Ms.">Ms.</option>
+		        	<option value="Dr.">Dr.</option>
+		        	<option value="Mrs.">Mrs.</option>
+		        </select>
+				<input id="Initial" name="Initial" type="text"  maxlength="8" onKeyPress="return charMax()" placeholder="Initial" class="input-field" style="width:32px;">
+		        <input id="CandName" name="CandName" type="text" maxlength="50" placeholder="Your Name" class="input-field" style="width:150px" text-transform:uppercase ></td>
+		        
+		        <td height="40" style="width: 25%"><strong style="font-size: 15px;">Father&#39;s / Husband name </strong><span style="color:red">*</span></td>
+		        <td style="width: 33%"><input id="FatherName" name="FatherName" maxlength="60" type="text" placeholder="Father&#39;s / Husband name" class="input-field" ></td>
+			</tr>
+    	
+		    <tr>
+		    	<td height="40" style="width: 21%"><strong style="font-size: 15px;">Gender</strong> <span style="color:red">*</span></td>
+		    	<td style="width: 27%">
+		    	<select name="Gender" id="Gender" class="input-field" required>
+		        	<option value=""> --- Select Gender --- </option>
+		        	<option value="Male">Male</option>
+		        	<option value="Female">Female </option>
+		        </select></td>
+		
+		    	
+		    	<td height="40" style="width: 25%"><strong style="font-size: 15px;">Marital status </strong><span style="color:red">*</span></td>
+		    	<td style="width: 33%"><select name="Mstatus" id="Mstatus" class="input-field" >
+		        	<option value=""> --- Select Marital Status --- </option>
+		        	<option value="S">Single</option>
+		        	<option value="M">Married </option>
+		        	<option value="W">Widowed </option>
+		        </select></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Email</strong> <span style="color:red">*</span></td>
+				<td style="width: 27%"><input type="Email" name="MailID" id="MailID" maxlength="35" placeholder="Email Id" class="input-field" ></td>
+	
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Aadhar Number</strong> <span style="color:red">*</span></td>
+				<td height="40" style="width: 27%"><input type="text" name="aadharno" id="aadharno" onkeypress="return isNumberKey(event)" maxlength="12" placeholder="Aadhar Number" class="input-field"></td>		
+			</tr>
+		</table>
+	</div>
+	<br><br>
+	<div class="form-style-2">
+		
+		<table width="80%" style="border:1px solid #A5A4A4; padding-bottom:3px;" border="0" cellpadding="5" cellspacing="0"  align="center">
+			<tr>
+				<td height="30" valign="middle" style="color:#C60000; font-size:16px; font-weight:bold; width: 21%;">Address</td>
+			</tr>
+			
+			<tr style="background:#e7e7e7;" height="35">
+	        	<td colspan="2" align="center" valign="middle"><strong style="font-size:14px;" >Present Address</strong></td>
+	        	<td colspan="2" width="50%" align="center" valign="middle"><strong style="font-size:14px;">Permanent Address</strong></td>
+	   	    </tr>
+	   	    <tr>
+	        	<td colspan="2" align="center" valign="middle"></td>
+	        	<td colspan="2" width="50%" align="left" valign="middle">
+	        	<input id="sameadd" name="sameadd" type="checkbox" value="Y" onclick="disablefields();"/> Same as Communication Address :</td>    
+	   	    </tr>   	    
+	   	    <tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Address Line 1 </strong><span style="color:red">*</span></td>
+				<td style="width: 27%" ><input type="text" name="CAddrLine1" id="CAddress1" maxlength="80" class="input-field" ></td>
+			
+				<td style="width: 25%"><strong style="font-size: 15px;">Address Line 1 </strong></td>
+				<td width="34%" ><input type="text" name="PAddrLine1" id="PAddress1" maxlength="80" class="input-field" ></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Address Line 2 </strong><span style="color:red"></span></td>
+				<td style="width: 27%"><input type="text" name="CAddrLine2" id="CAddress2" maxlength="80" class="input-field"></td>
+			
+				<td style="width: 25%"><strong style="font-size: 15px;">Address Line 2 </strong></td>
+				<td width="34%" ><input type="text" name="PAddrLine2" id="PAddress2" maxlength="80" class="input-field" ></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Address Line 3 </strong><span style="color:red">*</span></td>
+				<td style="width: 27%"><input type="text" name="CAddrLine3" id="CAddress3" maxlength="50" class="input-field" ></td>
+			
+				<td style="width: 25%"><strong style="font-size: 15px;">Address Line 3 </strong></td>
+				<td width="34%" ><input type="text" name="PAddrLine3" id="PAddress3" maxlength="50" class="input-field" ></td>
+			</tr>
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">State </strong><span style="color:red">*</span></td>
+				<td style="width: 27%">
+				<!--<select id='CState' name ="CState" style="border: 1px solid #ccc;border-radius: 3px;font-family: inherit;padding: 6px;padding: 0.428571429rem;width: 214px;line-height: 30px;}"> 
+				<option value="">--- Select State---</option></Select> -->
+				<select name="cat" id="cat" onchange=\"reload(this.form)\" class="input-field"  >
+	        	<option value="">--- Select State---</option>
+	       		<option value=AN>Andaman Nicobar</option><option value=AP>Andhra Pradesh</option><option value=AS>Assam</option><option value=AU>Arunanchal Pradesh</option><option value=BH>Bihar</option><option value=CH>Chandigarh</option><option value=CT>Chattisgarh</option><option value=DD>Daman & Diu</option><option value=DN>Dadar & Nagar Haveli</option><option value=GO>Goa</option><option value=GU>Gujarat</option><option value=HA>Haryana</option><option value=HI>Himachal Pradesh</option><option value=JH>Jharkhand</option><option value=JK>Jammu & Kashmir</option><option value=KA>Karnataka</option><option value=KL>Kerala</option><option value=LA>Lakshwdeep</option><option value=MA>Manipur</option><option value=ME>Meghalaya</option><option value=MH>Maharashtra</option><option value=MI>Mizoram</option><option value=MP>Madhya Pradesh</option><option value=NA>Nagaland</option><option value=ND>New Delhi</option><option value=OR>Orissa</option><option value=PO>Pondicherry</option><option value=PU>Punjab</option><option value=RA>Rajasthan</option><option value=SI>Sikkim</option><option value=TE>Telungana</option><option value=TI>Tripura</option><option value=TN>Tamil Nadu</option><option value=UP>Uttar Pradesh</option><option value=UT>Uttaranchal</option><option value=WB>West Bengal</option>	
+				</select> </td>
+					
+				<td style="width: 25%"><strong style="font-size: 15px;">State </strong></td>
+				<td width="34%">
+				<select name="PState" id="PAddress4" class="input-field"  >
+	        	<option value="">--- Select State---</option>
+	       		<option value=AN>Andaman Nicobar</option><option value=AP>Andhra Pradesh</option><option value=AS>Assam</option><option value=AU>Arunanchal Pradesh</option><option value=BH>Bihar</option><option value=CH>Chandigarh</option><option value=CT>Chattisgarh</option><option value=DD>Daman & Diu</option><option value=DN>Dadar & Nagar Haveli</option><option value=GO>Goa</option><option value=GU>Gujarat</option><option value=HA>Haryana</option><option value=HI>Himachal Pradesh</option><option value=JH>Jharkhand</option><option value=JK>Jammu & Kashmir</option><option value=KA>Karnataka</option><option value=KL>Kerala</option><option value=LA>Lakshwdeep</option><option value=MA>Manipur</option><option value=ME>Meghalaya</option><option value=MH>Maharashtra</option><option value=MI>Mizoram</option><option value=MP>Madhya Pradesh</option><option value=NA>Nagaland</option><option value=ND>New Delhi</option><option value=OR>Orissa</option><option value=PO>Pondicherry</option><option value=PU>Punjab</option><option value=RA>Rajasthan</option><option value=SI>Sikkim</option><option value=TE>Telungana</option><option value=TI>Tripura</option><option value=TN>Tamil Nadu</option><option value=UP>Uttar Pradesh</option><option value=UT>Uttaranchal</option><option value=WB>West Bengal</option>	
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">District </strong><span style="color:red">*</span></td>
+				<td style="width: 27%">
+				<!--<select id='CDistrict' name="CDistrict" style="border: 1px solid #ccc;border-radius: 3px;font-family: inherit;padding: 6px;padding: 0.428571429rem;width: 214px;line-height: 30px;}" >    </select> -->
+				<select name="subcat" id="subcat" class="input-field" >
+	        	<option value="">--- Select District---</option>        	
+	        	<option value=493>ADILABAD</option><option value=549>AGRA</option><option value=123>AHMADABAD</option><option value=294>AHMADNAGAR</option><option value=324>AIZAWL</option><option value=463>AJMER</option><option value=313>AKOLA</option><option value=267>ALAPPUZHA</option><option value=557>ALIGARH</option><option value=377>ALIRAJPUR</option><option value=539>ALLAHABAD</option><option value=615>ALMORA</option><option value=458>ALWAR</option><option value=159>AMBALA</option><option value=580>AMBEDKAR NAGAR</option><option value=302>AMRAVATI</option><option value=141>AMRELI</option><option value=437>AMRITSAR</option><option value=135>ANAND</option><option value=4>ANANTAPUR</option><option value=208>ANANTNAG</option><option value=44>ANJAW</option><option value=417>ANUGUL</option><option value=376>ANUPPUR</option><option value=61>ARARIA</option><option value=507>ARIYALUR</option><option value=63>ARWAL</option><option value=372>ASHOKNAGAR</option><option value=603>AURAIYA</option><option value=65>AURANGABAD</option><option value=298>AURANGABAD</option><option value=542>AZAMGARH</option><option value=211>BADGAM</option><option value=228>BAGALKOT</option><option value=620>BAGESHWAR</option><option value=604>BAGHPAT</option><option value=561>BAHRAICH</option><option value=34>BAKSA</option><option value=347>BALAGHAT</option><option value=411>BALANGIR</option><option value=405>BALESHWAR</option><option value=567>BALLIA</option><option value=583>BALRAMPUR</option><option value=127>BANASKANTHA</option><option value=591>BANDA</option><option value=219>BANDIPORA</option><option value=229>BANGALORE RURAL</option><option value=230>BANGALORE URBAN</option><option value=67>BANKA</option><option value=635>BANKURA</option><option value=473>BANSWARA</option><option value=566>BARABANKI</option><option value=209>BARAMULA</option><option value=482>BARAN</option><option value=625>BARDDHAMAN</option><option value=547>BAREILLY</option><option value=414>BARGARH</option><option value=462>BARMER</option><option value=455>BARNALA</option><option value=21>BARPETA</option><option value=355>BARWANI</option><option value=107>BASTAR</option><option value=579>BASTI</option><option value=444>BATHINDA</option><option value=430>BAUDH</option><option value=69>BEGUSARAI</option><option value=231>BELGAUM</option><option value=232>BELLARY</option><option value=348>BETUL</option><option value=413>BHADRAK</option><option value=71>BHAGALPUR</option><option value=319>BHANDARA</option><option value=464>BHARATPUR</option><option value=140>BHARUCH</option><option value=128>BHAVNAGAR</option><option value=465>BHILWARA</option><option value=346>BHIND</option><option value=151>BHIWANI</option><option value=73>BHOJPUR</option><option value=335>BHOPAL</option><option value=307>BID</option><option value=233>BIDAR</option><option value=116>BIJAPUR</option><option value=234>BIJAPUR</option><option value=554>BIJNOR</option><option value=466>BIKANER</option><option value=102>BILASPUR</option><option value=179>BILASPUR</option><option value=636>BIRBHUM</option><option value=278>BISHNUPUR</option><option value=186>BOKARO</option><option value=39>BONGAIGAON</option><option value=555>BUDAUN</option><option value=560>BULANDSHAHAR</option><option value=306>BULDANA</option><option value=485>BUNDI</option><option value=375>BURHANPUR</option><option value=75>BUXAR</option><option value=20>CACHAR</option><option value=400>CENTRAL DELHI</option><option value=176>CHAMBA</option><option value=618>CHAMOLI</option><option value=621>CHAMPAWAT</option><option value=326>CHAMPHAI</option><option value=235>CHAMRAJ NAGAR</option><option value=586>CHANDAULI</option><option value=280>CHANDEL</option><option value=99>CHANDIGARH</option><option value=309>CHANDRAPUR</option><option value=45>CHANGLANG</option><option value=196>CHATRA</option><option value=508>CHENNAI</option><option value=344>CHHATTARPUR</option><option value=339>CHHINDWARA</option><option value=237>CHICKMAGALUR</option><option value=236>CHIKBALLAPUR</option><option value=42>CHIRANG</option><option value=238>CHITRADURGA</option><option value=608>CHITRAKOOT</option><option value=476>CHITTAURGARH</option><option value=5>CHITTOOR</option><option value=277>CHURACHANDPUR</option><option value=468>CHURU</option><option value=538>COIMBATORE</option><option value=509>CUDDALORE</option><option value=8>CUDDAPAH</option><option value=403>CUTTACK</option><option value=120>DADRA AND NAGAR HAVELI</option><option value=641>DAKSHIN DINAJPUR</option><option value=239>DAKSHINA KANNADA</option><option value=118>DAMAN</option><option value=362>DAMOH</option><option value=115>DANTEWADA</option><option value=77>DARBHANGA</option><option value=640>DARJILING</option><option value=35>DARRANG</option><option value=374>DATIA</option><option value=475>DAUSA</option><option value=240>DAVANAGERE</option><option value=431>DEBAGARH</option><option value=611>DEHRADUN</option><option value=190>DEOGHAR</option><option value=570>DEORIA</option><option value=349>DEWAS</option><option value=506>DHALAI</option><option value=112>DHAMTARI</option><option value=183>DHANBAD</option><option value=338>DHAR</option><option value=510>DHARMAPURI</option><option value=241>DHARWAD</option><option value=483>DHAULPUR</option><option value=40>DHEMAJI</option><option value=419>DHENKANAL</option><option value=18>DHUBRI</option><option value=310>DHULE</option><option value=46>DIBANG VALLEY</option><option value=24>DIBRUGARH</option><option value=43>DIMA HASAO</option><option value=382>DIMAPUR</option><option value=511>DINDIGUL</option><option value=378>DINDORI</option><option value=119>DIU</option><option value=218>DODA</option><option value=134>DOHAD</option><option value=192>DUMKA</option><option value=480>DUNGARPUR</option><option value=101>DURG</option><option value=79>EAST CHAMPARAN</option><option value=398>EAST DELHI</option><option value=286>EAST GARO HILLS</option><option value=6>EAST GODAVARI</option><option value=47>EAST KAMENG</option><option value=282>EAST KHASI HILLS</option><option value=360>EAST NIMAR</option><option value=48>EAST SIANG</option><option value=489>EAST SIKKIM</option><option value=263>ERNAKULAM</option><option value=512>ERODE</option><option value=593>ETAH</option><option value=599>ETAWAH</option><option value=578>FAIZABAD</option><option value=149>FARIDABAD</option><option value=452>FARIDKOT</option><option value=587>FARRUKHABAD</option><option value=166>FATEHABAD</option><option value=454>FATEHGARH SAHIB</option><option value=573>FATEHPUR</option><option value=576>FIROZABAD</option><option value=440>FIROZPUR</option><option value=242>GADAG</option><option value=322>GADCHIROLI</option><option value=429>GAJAPATI</option><option value=222>GANDERBAL</option><option value=142>GANDHINAGAR</option><option value=470>GANGANAGAR</option><option value=402>GANJAM</option><option value=191>GARHWA</option><option value=597>GAUTAM BUDDHA NAGAR</option><option value=81>GAYA</option><option value=541>GHAZIABAD</option><option value=558>GHAZIPUR</option><option value=184>GIRIDIH</option><option value=31>GOALPARA</option><option value=193>GODDA</option><option value=29>GOLAGHAT</option><option value=564>GONDA</option><option value=317>GONDIYA</option><option value=83>GOPALGANJ</option><option value=548>GORAKHPUR</option><option value=243>GULBARGA</option><option value=197>GUMLA</option><option value=363>GUNA</option><option value=7>GUNTUR</option><option value=438>GURDASPUR</option><option value=152>GURGAON</option><option value=340>GWALIOR</option><option value=41>HAILAKANDI</option><option value=177>HAMIRPUR</option><option value=607>HAMIRPUR</option><option value=474>HANUMANGARH</option><option value=631>HAORA</option><option value=381>HARDA</option><option value=551>HARDOI</option><option value=610>HARIDWAR</option><option value=244>HASSAN</option><option value=245>HAVERI</option><option value=188>HAZARIBAGH</option><option value=321>HINGOLI</option><option value=150>HISAR</option><option value=364>HOSHANGABAD</option><option value=443>HOSHIARPUR</option><option value=628>HUGLI</option><option value=494>HYDERABAD</option><option value=264>IDUKKI</option><option value=275>IMPHAL EAST</option><option value=273>IMPHAL WEST</option><option value=332>INDORE</option><option value=333>JABALPUR</option><option value=420>JAGATSINGHAPUR</option><option value=284>JAINTIA HILLS</option><option value=456>JAIPUR</option><option value=488>JAISALMER</option><option value=408>JAJAPUR</option><option value=439>JALANDHAR</option><option value=595>JALAUN</option><option value=296>JALGAON</option><option value=311>JALNA</option><option value=472>JALOR</option><option value=634>JALPAIGURI</option><option value=206>JAMMU</option><option value=133>JAMNAGAR</option><option value=200>JAMTARA</option><option value=85>JAMUI</option><option value=104>JANJGIR CHAMPA</option><option value=110>JASHPUR</option><option value=545>JAUNPUR</option><option value=87>JEHANABAD</option><option value=370>JHABUA</option><option value=165>JHAJJAR</option><option value=479>JHALAWAR</option><option value=585>JHANSI</option><option value=428>JHARSUGUDA</option><option value=467>JHUNJHUNUN</option><option value=155>JIND</option><option value=457>JODHPUR</option><option value=28>JORHAT</option><option value=129>JUNAGADH</option><option value=590>JYOTIBA PHULE NAGAR</option><option value=111>KABIRDHAM</option><option value=136>KACHCHH</option><option value=89>KAIMUR</option><option value=161>KAITHAL</option><option value=412>KALAHANDI</option><option value=22>KAMRUP</option><option value=25>KAMRUP METROPOLITAN</option><option value=513>KANCHEEPURAM</option><option value=424>KANDHAMAL</option><option value=170>KANGRA</option><option value=113>KANKER</option><option value=596>KANNAUJ</option><option value=514>KANNIYAKUMARI</option><option value=258>KANNUR</option><option value=544>KANPUR NAGAR</option><option value=602>KANSHIRAM NAGAR</option><option value=449>KAPURTHALA</option><option value=434>KARAIKAL</option><option value=477>KARAULI</option><option value=33>KARBI ANGLONG</option><option value=226>KARGIL</option><option value=26>KARIMGANJ</option><option value=495>KARIMNAGAR</option><option value=153>KARNAL</option><option value=515>KARUR</option><option value=255>KARWAR</option><option value=259>KASARAGOD</option><option value=213>KATHUA</option><option value=91>KATIHAR</option><option value=361>KATNI</option><option value=598>KAUSHAMBI</option><option value=415>KENDRAPARA</option><option value=409>KENDUJHAR</option><option value=93>KHAGARIA</option><option value=496>KHAMMAM</option><option value=132>KHEDA</option><option value=552>KHERI</option><option value=406>KHORDHA</option><option value=204>KHUNTI</option><option value=180>KINNAUR</option><option value=391>KIPHIRE</option><option value=95>KISHANGANJ</option><option value=225>KISHTWAR</option><option value=639>KOCH BIHAR</option><option value=246>KODAGU</option><option value=202>KODARMA</option><option value=383>KOHIMA</option><option value=36>KOKRAJHAR</option><option value=247>KOLAR</option><option value=329>KOLASIB</option><option value=297>KOLHAPUR</option><option value=632>KOLKATA</option><option value=268>KOLLAM</option><option value=248>KOPPAL</option><option value=416>KORAPUT</option><option value=108>KORBA</option><option value=114>KOREA</option><option value=471>KOTA</option><option value=269>KOTTAYAM</option><option value=260>KOZHIKODE</option><option value=9>KRISHNA</option><option value=516>KRISHNAGIRI</option><option value=217>KULGAM</option><option value=178>KULLU</option><option value=210>KUPWARA</option><option value=10>KURNOOL</option><option value=164>KURUKSHETRA</option><option value=49>KURUNG KUMEY</option><option value=559>KUSHINAGAR</option><option value=181>LAHUL AND SPITI</option><option value=30>LAKHIMPUR</option><option value=97>LAKHISARAI</option><option value=272>LAKSHADWEEP</option><option value=605>LALITPUR</option><option value=201>LATEHAR</option><option value=308>LATUR</option><option value=327>LAWNGTLAI</option><option value=227>LEH</option><option value=205>LOHARDAGA</option><option value=50>LOHIT</option><option value=51>LONGDING</option><option value=392>LONGLENG</option><option value=52>LOWER DIBANG VALLEY</option><option value=53>LOWER SUBANSIRI</option><option value=543>LUCKNOW</option><option value=436>LUDHIANA</option><option value=325>LUNGLEI</option><option value=62>MADHEPURA</option><option value=64>MADHUBANI</option><option value=517>MADURAI</option><option value=497>MAHABOOBNAGAR</option><option value=601>MAHAMAYA NAGAR</option><option value=572>MAHARAJGANJ</option><option value=109>MAHASAMUND</option><option value=432>MAHE</option><option value=167>MAHENDRAGARH</option><option value=137>MAHESANA</option><option value=609>MAHOBA</option><option value=588>MAINPURI</option><option value=261>MALAPPURAM</option><option value=633>MALDAH</option><option value=425>MALKANGIRI</option><option value=328>MAMIT</option><option value=171>MANDI</option><option value=369>MANDLA</option><option value=357>MANDSAUR</option><option value=249>MANDYA</option><option value=450>MANSA</option><option value=575>MATHURA</option><option value=582>MAU</option><option value=404>MAYURBHANJ</option><option value=498>MEDAK</option><option value=563>MEERUT</option><option value=160>MEWAT</option><option value=577>MIRZAPUR</option><option value=446>MOGA</option><option value=447>MOHALI</option><option value=386>MOKOKCHUNG</option><option value=384>MON</option><option value=66>MONGHYR</option><option value=540>MORADABAD</option><option value=342>MORENA</option><option value=32>MORIGAON</option><option value=448>MUKTSAR</option><option value=300>MUMBAI CITY</option><option value=291>MUMBAI SUBURBAN</option><option value=626>MURSHIDABAD</option><option value=550>MUZAFFARNAGAR</option><option value=68>MUZAFFARPUR</option><option value=250>MYSORE</option><option value=418>NABARANGAPUR</option><option value=629>NADIA</option><option value=17>NAGAON</option><option value=518>NAGAPATTINAM</option><option value=459>NAGAUR</option><option value=293>NAGPUR</option><option value=613>NAINITAL</option><option value=70>NALANDA</option><option value=38>NALBARI</option><option value=499>NALGONDA</option><option value=519>NAMAKKAL</option><option value=299>NANDED</option><option value=315>NANDURBAR</option><option value=117>NARAYANPUR</option><option value=146>NARMADA</option><option value=367>NARSIMHAPUR</option><option value=292>NASHIK</option><option value=144>NAVSARI</option><option value=72>NAWADA</option><option value=423>NAYAGARH</option><option value=373>NEEMUCH</option><option value=12>NELLORE</option><option value=401>NEW DELHI</option><option value=3>NICOBARS</option><option value=500>NIZAMABAD</option><option value=2>NORTH AND MIDDLE ANDAMAN</option><option value=399>NORTH DELHI</option><option value=397>NORTH EAST DELHI</option><option value=121>NORTH GOA</option><option value=492>NORTH SIKKIM</option><option value=505>NORTH TRIPURA</option><option value=623>NORTH TWENTY FOUR PARGANAS</option><option value=393>NORTH WEST DELHI</option><option value=426>NUAPADA</option><option value=314>OSMANABAD</option><option value=199>PAKUR</option><option value=265>PALAKKAD</option><option value=187>PALAMU</option><option value=469>PALI</option><option value=163>PALWAL</option><option value=169>PANCHKULA</option><option value=131>PANCHMAHAL</option><option value=158>PANIPAT</option><option value=371>PANNA</option><option value=54>PAPUM PARE</option><option value=312>PARBHANI</option><option value=627>PASCHIM MEDINIPUR</option><option value=189>PASHCHIMI SINGHBHUM</option><option value=143>PATAN</option><option value=270>PATHANAMTHITTA</option><option value=441>PATIALA</option><option value=74>PATNA</option><option value=614>PAURI GARHWAL</option><option value=520>PERAMBALUR</option><option value=390>PEREN</option><option value=388>PHEK</option><option value=584>PILIBHIT</option><option value=617>PITHORAGARH</option><option value=147>PORBANDAR</option><option value=11>PRAKASAM</option><option value=487>PRATAPGARH</option><option value=568>PRATAPGARH</option><option value=435>PUDUCHERRY</option><option value=521>PUDUKOTTAI</option><option value=214>PULWAMA</option><option value=216>PUNCH</option><option value=290>PUNE</option><option value=630>PURBA MEDINIPUR</option><option value=185>PURBI SINGHBHUM</option><option value=410>PURI</option><option value=76>PURNEA</option><option value=638>PURULIYA</option><option value=565>RAE BARELI</option><option value=252>RAICHUR</option><option value=106>RAIGARH</option><option value=305>RAIGARH</option><option value=100>RAIPUR</option><option value=358>RAISEN</option><option value=350>RAJGARH</option><option value=126>RAJKOT</option><option value=105>RAJNANDGAON</option><option value=212>RAJOURI</option><option value=484>RAJSAMAND</option><option value=592>RAMABAI NAGAR</option><option value=522>RAMANATHAPURAM</option><option value=223>RAMBAN</option><option value=198>RAMGARH</option><option value=251>RAMNAGARA</option><option value=581>RAMPUR</option><option value=182>RANCHI</option><option value=501>RANGAREDDY</option><option value=353>RATLAM</option><option value=316>RATNAGIRI</option><option value=422>RAYAGADA</option><option value=221>REASI</option><option value=336>REWA</option><option value=168>REWARI</option><option value=287>RI BHOI</option><option value=162>ROHTAK</option><option value=78>ROHTAS</option><option value=622>RUDRAPRAYAG</option><option value=451>RUPNAGAR</option><option value=130>SABARKANTHA</option><option value=334>SAGAR</option><option value=562>SAHARANPUR</option><option value=80>SAHARSA</option><option value=194>SAHIBGANJ</option><option value=331>SAIHA</option><option value=523>SALEM</option><option value=82>SAMASTIPUR</option><option value=220>SAMBA</option><option value=421>SAMBALPUR</option><option value=303>SANGLI</option><option value=442>SANGRUR</option><option value=594>SANT KABIR NAGAR</option><option value=600>SANT RAVIDAS NAGAR</option><option value=195>SARAIKELA KHARSAWAN</option><option value=84>SARAN</option><option value=301>SATARA</option><option value=337>SATNA</option><option value=481>SAWAI MADHOPUR</option><option value=359>SEHORE</option><option value=274>SENAPATI</option><option value=356>SEONI</option><option value=330>SERCHHIP</option><option value=368>SHAHDOL</option><option value=453>SHAHID BHAGAT SINGH NAGAR</option><option value=571>SHAHJAHANPUR</option><option value=351>SHAJAPUR</option><option value=88>SHEOHAR</option><option value=379>SHEOPUR</option><option value=86>SHIEKHPURA</option><option value=172>SHIMLA</option><option value=253>SHIMOGA</option><option value=345>SHIVPURI</option><option value=606>SHRAWASTI</option><option value=224>SHUPIYAN</option><option value=574>SIDDHARTH NAGAR</option><option value=366>SIDHI</option><option value=461>SIKAR</option><option value=203>SIMDEGA</option><option value=323>SINDHUDURG</option><option value=365>SINGRAULI</option><option value=174>SIRMAUR</option><option value=486>SIROHI</option><option value=156>SIRSA</option><option value=90>SITAMARHI</option><option value=546>SITAPUR</option><option value=524>SIVAGANGAI</option><option value=27>SIVASAGAR</option><option value=92>SIWAN</option><option value=173>SOLAN</option><option value=295>SOLAPUR</option><option value=589>SONBHADRA</option><option value=154>SONIPAT</option><option value=19>SONITPUR</option><option value=1>SOUTH ANDAMAN</option><option value=394>SOUTH DELHI</option><option value=288>SOUTH GARO HILLS</option><option value=122>SOUTH GOA</option><option value=490>SOUTH SIKKIM</option><option value=504>SOUTH TRIPURA</option><option value=624>SOUTH TWENTY FOUR PARGANAS</option><option value=396>SOUTH WEST DELHI</option><option value=13>SRIKAKULAM</option><option value=207>SRINAGAR</option><option value=427>SUBARNAPUR</option><option value=553>SULTANPUR</option><option value=407>SUNDARGARH</option><option value=94>SUPAUL</option><option value=124>SURAT</option><option value=138>SURENDRANAGAR</option><option value=103>SURGUJA</option><option value=281>TAMENGLONG</option><option value=145>TAPI</option><option value=445>TARN TARAN</option><option value=55>TAWANG</option><option value=616>TEHRI GARHWAL</option><option value=289>THANE</option><option value=525>THANJAVUR</option><option value=148>THE DANGS</option><option value=527>THE NILGIRIS</option><option value=526>THENI</option><option value=528>THIRUNELVELI</option><option value=529>THIRUVALLUR</option><option value=271>THIRUVANANTHAPURAM</option><option value=530>THIRUVANNAMALAI</option><option value=531>THIRUVARUR</option><option value=532>THOOTHUKUDI</option><option value=276>THOUBAL</option><option value=266>THRISSUR</option><option value=354>TIKAMGARH</option><option value=23>TINSUKIA</option><option value=56>TIRAP</option><option value=533>TIRUCHIRAPALLI</option><option value=534>TIRUPPUR</option><option value=478>TONK</option><option value=385>TUENSANG</option><option value=254>TUMKUR</option><option value=460>UDAIPUR</option><option value=37>UDALGURI</option><option value=612>UDHAM SINGH NAGAR</option><option value=215>UDHAMPUR</option><option value=256>UDUPI</option><option value=341>UJJAIN</option><option value=279>UKHRUL</option><option value=380>UMARIA</option><option value=175>UNA</option><option value=569>UNNAO</option><option value=57>UPPER SIANG</option><option value=58>UPPER SUBANSIRI</option><option value=637>UTTAR DINAJPUR</option><option value=619>UTTARKASHI</option><option value=125>VADODARA</option><option value=96>VAISHALI</option><option value=139>VALSAD</option><option value=556>VARANASI</option><option value=535>VELLORE</option><option value=352>VIDISHA</option><option value=536>VILLUPURAM</option><option value=537>VIRUDHUNAGAR</option><option value=14>VISHAKHAPATNAM</option><option value=15>VIZIANAGARAM</option><option value=502>WARANGAL</option><option value=318>WARDHA</option><option value=320>WASHIM</option><option value=262>WAYANAD</option><option value=98>WEST CHAMPARAN</option><option value=395>WEST DELHI</option><option value=283>WEST GARO HILLS</option><option value=16>WEST GODAVARI</option><option value=59>WEST KAMENG</option><option value=285>WEST KHASI HILLS</option><option value=343>WEST NIMAR</option><option value=60>WEST SIANG</option><option value=491>WEST SIKKIM</option><option value=503>WEST TRIPURA</option><option value=387>WOKHA</option><option value=257>YADGIR</option><option value=157>YAMUNANAGAR</option><option value=433>YANAM</option><option value=304>YAVATMAL</option><option value=389>ZUNHEBOTO</option>        	
+	        	</select></td>
+				
+				<td style="width: 25%"><strong style="font-size: 15px;">District </strong></td>
+				<td width="34%" >
+				<select name="PDistrict" id="PAddress5" class="input-field" >
+	        	<option value="">--- Select District---</option>        	
+	        	<option value=493>ADILABAD</option><option value=549>AGRA</option><option value=123>AHMADABAD</option><option value=294>AHMADNAGAR</option><option value=324>AIZAWL</option><option value=463>AJMER</option><option value=313>AKOLA</option><option value=267>ALAPPUZHA</option><option value=557>ALIGARH</option><option value=377>ALIRAJPUR</option><option value=539>ALLAHABAD</option><option value=615>ALMORA</option><option value=458>ALWAR</option><option value=159>AMBALA</option><option value=580>AMBEDKAR NAGAR</option><option value=302>AMRAVATI</option><option value=141>AMRELI</option><option value=437>AMRITSAR</option><option value=135>ANAND</option><option value=4>ANANTAPUR</option><option value=208>ANANTNAG</option><option value=44>ANJAW</option><option value=417>ANUGUL</option><option value=376>ANUPPUR</option><option value=61>ARARIA</option><option value=507>ARIYALUR</option><option value=63>ARWAL</option><option value=372>ASHOKNAGAR</option><option value=603>AURAIYA</option><option value=65>AURANGABAD</option><option value=298>AURANGABAD</option><option value=542>AZAMGARH</option><option value=211>BADGAM</option><option value=228>BAGALKOT</option><option value=620>BAGESHWAR</option><option value=604>BAGHPAT</option><option value=561>BAHRAICH</option><option value=34>BAKSA</option><option value=347>BALAGHAT</option><option value=411>BALANGIR</option><option value=405>BALESHWAR</option><option value=567>BALLIA</option><option value=583>BALRAMPUR</option><option value=127>BANASKANTHA</option><option value=591>BANDA</option><option value=219>BANDIPORA</option><option value=229>BANGALORE RURAL</option><option value=230>BANGALORE URBAN</option><option value=67>BANKA</option><option value=635>BANKURA</option><option value=473>BANSWARA</option><option value=566>BARABANKI</option><option value=209>BARAMULA</option><option value=482>BARAN</option><option value=625>BARDDHAMAN</option><option value=547>BAREILLY</option><option value=414>BARGARH</option><option value=462>BARMER</option><option value=455>BARNALA</option><option value=21>BARPETA</option><option value=355>BARWANI</option><option value=107>BASTAR</option><option value=579>BASTI</option><option value=444>BATHINDA</option><option value=430>BAUDH</option><option value=69>BEGUSARAI</option><option value=231>BELGAUM</option><option value=232>BELLARY</option><option value=348>BETUL</option><option value=413>BHADRAK</option><option value=71>BHAGALPUR</option><option value=319>BHANDARA</option><option value=464>BHARATPUR</option><option value=140>BHARUCH</option><option value=128>BHAVNAGAR</option><option value=465>BHILWARA</option><option value=346>BHIND</option><option value=151>BHIWANI</option><option value=73>BHOJPUR</option><option value=335>BHOPAL</option><option value=307>BID</option><option value=233>BIDAR</option><option value=116>BIJAPUR</option><option value=234>BIJAPUR</option><option value=554>BIJNOR</option><option value=466>BIKANER</option><option value=102>BILASPUR</option><option value=179>BILASPUR</option><option value=636>BIRBHUM</option><option value=278>BISHNUPUR</option><option value=186>BOKARO</option><option value=39>BONGAIGAON</option><option value=555>BUDAUN</option><option value=560>BULANDSHAHAR</option><option value=306>BULDANA</option><option value=485>BUNDI</option><option value=375>BURHANPUR</option><option value=75>BUXAR</option><option value=20>CACHAR</option><option value=400>CENTRAL DELHI</option><option value=176>CHAMBA</option><option value=618>CHAMOLI</option><option value=621>CHAMPAWAT</option><option value=326>CHAMPHAI</option><option value=235>CHAMRAJ NAGAR</option><option value=586>CHANDAULI</option><option value=280>CHANDEL</option><option value=99>CHANDIGARH</option><option value=309>CHANDRAPUR</option><option value=45>CHANGLANG</option><option value=196>CHATRA</option><option value=508>CHENNAI</option><option value=344>CHHATTARPUR</option><option value=339>CHHINDWARA</option><option value=237>CHICKMAGALUR</option><option value=236>CHIKBALLAPUR</option><option value=42>CHIRANG</option><option value=238>CHITRADURGA</option><option value=608>CHITRAKOOT</option><option value=476>CHITTAURGARH</option><option value=5>CHITTOOR</option><option value=277>CHURACHANDPUR</option><option value=468>CHURU</option><option value=538>COIMBATORE</option><option value=509>CUDDALORE</option><option value=8>CUDDAPAH</option><option value=403>CUTTACK</option><option value=120>DADRA AND NAGAR HAVELI</option><option value=641>DAKSHIN DINAJPUR</option><option value=239>DAKSHINA KANNADA</option><option value=118>DAMAN</option><option value=362>DAMOH</option><option value=115>DANTEWADA</option><option value=77>DARBHANGA</option><option value=640>DARJILING</option><option value=35>DARRANG</option><option value=374>DATIA</option><option value=475>DAUSA</option><option value=240>DAVANAGERE</option><option value=431>DEBAGARH</option><option value=611>DEHRADUN</option><option value=190>DEOGHAR</option><option value=570>DEORIA</option><option value=349>DEWAS</option><option value=506>DHALAI</option><option value=112>DHAMTARI</option><option value=183>DHANBAD</option><option value=338>DHAR</option><option value=510>DHARMAPURI</option><option value=241>DHARWAD</option><option value=483>DHAULPUR</option><option value=40>DHEMAJI</option><option value=419>DHENKANAL</option><option value=18>DHUBRI</option><option value=310>DHULE</option><option value=46>DIBANG VALLEY</option><option value=24>DIBRUGARH</option><option value=43>DIMA HASAO</option><option value=382>DIMAPUR</option><option value=511>DINDIGUL</option><option value=378>DINDORI</option><option value=119>DIU</option><option value=218>DODA</option><option value=134>DOHAD</option><option value=192>DUMKA</option><option value=480>DUNGARPUR</option><option value=101>DURG</option><option value=79>EAST CHAMPARAN</option><option value=398>EAST DELHI</option><option value=286>EAST GARO HILLS</option><option value=6>EAST GODAVARI</option><option value=47>EAST KAMENG</option><option value=282>EAST KHASI HILLS</option><option value=360>EAST NIMAR</option><option value=48>EAST SIANG</option><option value=489>EAST SIKKIM</option><option value=263>ERNAKULAM</option><option value=512>ERODE</option><option value=593>ETAH</option><option value=599>ETAWAH</option><option value=578>FAIZABAD</option><option value=149>FARIDABAD</option><option value=452>FARIDKOT</option><option value=587>FARRUKHABAD</option><option value=166>FATEHABAD</option><option value=454>FATEHGARH SAHIB</option><option value=573>FATEHPUR</option><option value=576>FIROZABAD</option><option value=440>FIROZPUR</option><option value=242>GADAG</option><option value=322>GADCHIROLI</option><option value=429>GAJAPATI</option><option value=222>GANDERBAL</option><option value=142>GANDHINAGAR</option><option value=470>GANGANAGAR</option><option value=402>GANJAM</option><option value=191>GARHWA</option><option value=597>GAUTAM BUDDHA NAGAR</option><option value=81>GAYA</option><option value=541>GHAZIABAD</option><option value=558>GHAZIPUR</option><option value=184>GIRIDIH</option><option value=31>GOALPARA</option><option value=193>GODDA</option><option value=29>GOLAGHAT</option><option value=564>GONDA</option><option value=317>GONDIYA</option><option value=83>GOPALGANJ</option><option value=548>GORAKHPUR</option><option value=243>GULBARGA</option><option value=197>GUMLA</option><option value=363>GUNA</option><option value=7>GUNTUR</option><option value=438>GURDASPUR</option><option value=152>GURGAON</option><option value=340>GWALIOR</option><option value=41>HAILAKANDI</option><option value=177>HAMIRPUR</option><option value=607>HAMIRPUR</option><option value=474>HANUMANGARH</option><option value=631>HAORA</option><option value=381>HARDA</option><option value=551>HARDOI</option><option value=610>HARIDWAR</option><option value=244>HASSAN</option><option value=245>HAVERI</option><option value=188>HAZARIBAGH</option><option value=321>HINGOLI</option><option value=150>HISAR</option><option value=364>HOSHANGABAD</option><option value=443>HOSHIARPUR</option><option value=628>HUGLI</option><option value=494>HYDERABAD</option><option value=264>IDUKKI</option><option value=275>IMPHAL EAST</option><option value=273>IMPHAL WEST</option><option value=332>INDORE</option><option value=333>JABALPUR</option><option value=420>JAGATSINGHAPUR</option><option value=284>JAINTIA HILLS</option><option value=456>JAIPUR</option><option value=488>JAISALMER</option><option value=408>JAJAPUR</option><option value=439>JALANDHAR</option><option value=595>JALAUN</option><option value=296>JALGAON</option><option value=311>JALNA</option><option value=472>JALOR</option><option value=634>JALPAIGURI</option><option value=206>JAMMU</option><option value=133>JAMNAGAR</option><option value=200>JAMTARA</option><option value=85>JAMUI</option><option value=104>JANJGIR CHAMPA</option><option value=110>JASHPUR</option><option value=545>JAUNPUR</option><option value=87>JEHANABAD</option><option value=370>JHABUA</option><option value=165>JHAJJAR</option><option value=479>JHALAWAR</option><option value=585>JHANSI</option><option value=428>JHARSUGUDA</option><option value=467>JHUNJHUNUN</option><option value=155>JIND</option><option value=457>JODHPUR</option><option value=28>JORHAT</option><option value=129>JUNAGADH</option><option value=590>JYOTIBA PHULE NAGAR</option><option value=111>KABIRDHAM</option><option value=136>KACHCHH</option><option value=89>KAIMUR</option><option value=161>KAITHAL</option><option value=412>KALAHANDI</option><option value=22>KAMRUP</option><option value=25>KAMRUP METROPOLITAN</option><option value=513>KANCHEEPURAM</option><option value=424>KANDHAMAL</option><option value=170>KANGRA</option><option value=113>KANKER</option><option value=596>KANNAUJ</option><option value=514>KANNIYAKUMARI</option><option value=258>KANNUR</option><option value=544>KANPUR NAGAR</option><option value=602>KANSHIRAM NAGAR</option><option value=449>KAPURTHALA</option><option value=434>KARAIKAL</option><option value=477>KARAULI</option><option value=33>KARBI ANGLONG</option><option value=226>KARGIL</option><option value=26>KARIMGANJ</option><option value=495>KARIMNAGAR</option><option value=153>KARNAL</option><option value=515>KARUR</option><option value=255>KARWAR</option><option value=259>KASARAGOD</option><option value=213>KATHUA</option><option value=91>KATIHAR</option><option value=361>KATNI</option><option value=598>KAUSHAMBI</option><option value=415>KENDRAPARA</option><option value=409>KENDUJHAR</option><option value=93>KHAGARIA</option><option value=496>KHAMMAM</option><option value=132>KHEDA</option><option value=552>KHERI</option><option value=406>KHORDHA</option><option value=204>KHUNTI</option><option value=180>KINNAUR</option><option value=391>KIPHIRE</option><option value=95>KISHANGANJ</option><option value=225>KISHTWAR</option><option value=639>KOCH BIHAR</option><option value=246>KODAGU</option><option value=202>KODARMA</option><option value=383>KOHIMA</option><option value=36>KOKRAJHAR</option><option value=247>KOLAR</option><option value=329>KOLASIB</option><option value=297>KOLHAPUR</option><option value=632>KOLKATA</option><option value=268>KOLLAM</option><option value=248>KOPPAL</option><option value=416>KORAPUT</option><option value=108>KORBA</option><option value=114>KOREA</option><option value=471>KOTA</option><option value=269>KOTTAYAM</option><option value=260>KOZHIKODE</option><option value=9>KRISHNA</option><option value=516>KRISHNAGIRI</option><option value=217>KULGAM</option><option value=178>KULLU</option><option value=210>KUPWARA</option><option value=10>KURNOOL</option><option value=164>KURUKSHETRA</option><option value=49>KURUNG KUMEY</option><option value=559>KUSHINAGAR</option><option value=181>LAHUL AND SPITI</option><option value=30>LAKHIMPUR</option><option value=97>LAKHISARAI</option><option value=272>LAKSHADWEEP</option><option value=605>LALITPUR</option><option value=201>LATEHAR</option><option value=308>LATUR</option><option value=327>LAWNGTLAI</option><option value=227>LEH</option><option value=205>LOHARDAGA</option><option value=50>LOHIT</option><option value=51>LONGDING</option><option value=392>LONGLENG</option><option value=52>LOWER DIBANG VALLEY</option><option value=53>LOWER SUBANSIRI</option><option value=543>LUCKNOW</option><option value=436>LUDHIANA</option><option value=325>LUNGLEI</option><option value=62>MADHEPURA</option><option value=64>MADHUBANI</option><option value=517>MADURAI</option><option value=497>MAHABOOBNAGAR</option><option value=601>MAHAMAYA NAGAR</option><option value=572>MAHARAJGANJ</option><option value=109>MAHASAMUND</option><option value=432>MAHE</option><option value=167>MAHENDRAGARH</option><option value=137>MAHESANA</option><option value=609>MAHOBA</option><option value=588>MAINPURI</option><option value=261>MALAPPURAM</option><option value=633>MALDAH</option><option value=425>MALKANGIRI</option><option value=328>MAMIT</option><option value=171>MANDI</option><option value=369>MANDLA</option><option value=357>MANDSAUR</option><option value=249>MANDYA</option><option value=450>MANSA</option><option value=575>MATHURA</option><option value=582>MAU</option><option value=404>MAYURBHANJ</option><option value=498>MEDAK</option><option value=563>MEERUT</option><option value=160>MEWAT</option><option value=577>MIRZAPUR</option><option value=446>MOGA</option><option value=447>MOHALI</option><option value=386>MOKOKCHUNG</option><option value=384>MON</option><option value=66>MONGHYR</option><option value=540>MORADABAD</option><option value=342>MORENA</option><option value=32>MORIGAON</option><option value=448>MUKTSAR</option><option value=300>MUMBAI CITY</option><option value=291>MUMBAI SUBURBAN</option><option value=626>MURSHIDABAD</option><option value=550>MUZAFFARNAGAR</option><option value=68>MUZAFFARPUR</option><option value=250>MYSORE</option><option value=418>NABARANGAPUR</option><option value=629>NADIA</option><option value=17>NAGAON</option><option value=518>NAGAPATTINAM</option><option value=459>NAGAUR</option><option value=293>NAGPUR</option><option value=613>NAINITAL</option><option value=70>NALANDA</option><option value=38>NALBARI</option><option value=499>NALGONDA</option><option value=519>NAMAKKAL</option><option value=299>NANDED</option><option value=315>NANDURBAR</option><option value=117>NARAYANPUR</option><option value=146>NARMADA</option><option value=367>NARSIMHAPUR</option><option value=292>NASHIK</option><option value=144>NAVSARI</option><option value=72>NAWADA</option><option value=423>NAYAGARH</option><option value=373>NEEMUCH</option><option value=12>NELLORE</option><option value=401>NEW DELHI</option><option value=3>NICOBARS</option><option value=500>NIZAMABAD</option><option value=2>NORTH AND MIDDLE ANDAMAN</option><option value=399>NORTH DELHI</option><option value=397>NORTH EAST DELHI</option><option value=121>NORTH GOA</option><option value=492>NORTH SIKKIM</option><option value=505>NORTH TRIPURA</option><option value=623>NORTH TWENTY FOUR PARGANAS</option><option value=393>NORTH WEST DELHI</option><option value=426>NUAPADA</option><option value=314>OSMANABAD</option><option value=199>PAKUR</option><option value=265>PALAKKAD</option><option value=187>PALAMU</option><option value=469>PALI</option><option value=163>PALWAL</option><option value=169>PANCHKULA</option><option value=131>PANCHMAHAL</option><option value=158>PANIPAT</option><option value=371>PANNA</option><option value=54>PAPUM PARE</option><option value=312>PARBHANI</option><option value=627>PASCHIM MEDINIPUR</option><option value=189>PASHCHIMI SINGHBHUM</option><option value=143>PATAN</option><option value=270>PATHANAMTHITTA</option><option value=441>PATIALA</option><option value=74>PATNA</option><option value=614>PAURI GARHWAL</option><option value=520>PERAMBALUR</option><option value=390>PEREN</option><option value=388>PHEK</option><option value=584>PILIBHIT</option><option value=617>PITHORAGARH</option><option value=147>PORBANDAR</option><option value=11>PRAKASAM</option><option value=487>PRATAPGARH</option><option value=568>PRATAPGARH</option><option value=435>PUDUCHERRY</option><option value=521>PUDUKOTTAI</option><option value=214>PULWAMA</option><option value=216>PUNCH</option><option value=290>PUNE</option><option value=630>PURBA MEDINIPUR</option><option value=185>PURBI SINGHBHUM</option><option value=410>PURI</option><option value=76>PURNEA</option><option value=638>PURULIYA</option><option value=565>RAE BARELI</option><option value=252>RAICHUR</option><option value=106>RAIGARH</option><option value=305>RAIGARH</option><option value=100>RAIPUR</option><option value=358>RAISEN</option><option value=350>RAJGARH</option><option value=126>RAJKOT</option><option value=105>RAJNANDGAON</option><option value=212>RAJOURI</option><option value=484>RAJSAMAND</option><option value=592>RAMABAI NAGAR</option><option value=522>RAMANATHAPURAM</option><option value=223>RAMBAN</option><option value=198>RAMGARH</option><option value=251>RAMNAGARA</option><option value=581>RAMPUR</option><option value=182>RANCHI</option><option value=501>RANGAREDDY</option><option value=353>RATLAM</option><option value=316>RATNAGIRI</option><option value=422>RAYAGADA</option><option value=221>REASI</option><option value=336>REWA</option><option value=168>REWARI</option><option value=287>RI BHOI</option><option value=162>ROHTAK</option><option value=78>ROHTAS</option><option value=622>RUDRAPRAYAG</option><option value=451>RUPNAGAR</option><option value=130>SABARKANTHA</option><option value=334>SAGAR</option><option value=562>SAHARANPUR</option><option value=80>SAHARSA</option><option value=194>SAHIBGANJ</option><option value=331>SAIHA</option><option value=523>SALEM</option><option value=82>SAMASTIPUR</option><option value=220>SAMBA</option><option value=421>SAMBALPUR</option><option value=303>SANGLI</option><option value=442>SANGRUR</option><option value=594>SANT KABIR NAGAR</option><option value=600>SANT RAVIDAS NAGAR</option><option value=195>SARAIKELA KHARSAWAN</option><option value=84>SARAN</option><option value=301>SATARA</option><option value=337>SATNA</option><option value=481>SAWAI MADHOPUR</option><option value=359>SEHORE</option><option value=274>SENAPATI</option><option value=356>SEONI</option><option value=330>SERCHHIP</option><option value=368>SHAHDOL</option><option value=453>SHAHID BHAGAT SINGH NAGAR</option><option value=571>SHAHJAHANPUR</option><option value=351>SHAJAPUR</option><option value=88>SHEOHAR</option><option value=379>SHEOPUR</option><option value=86>SHIEKHPURA</option><option value=172>SHIMLA</option><option value=253>SHIMOGA</option><option value=345>SHIVPURI</option><option value=606>SHRAWASTI</option><option value=224>SHUPIYAN</option><option value=574>SIDDHARTH NAGAR</option><option value=366>SIDHI</option><option value=461>SIKAR</option><option value=203>SIMDEGA</option><option value=323>SINDHUDURG</option><option value=365>SINGRAULI</option><option value=174>SIRMAUR</option><option value=486>SIROHI</option><option value=156>SIRSA</option><option value=90>SITAMARHI</option><option value=546>SITAPUR</option><option value=524>SIVAGANGAI</option><option value=27>SIVASAGAR</option><option value=92>SIWAN</option><option value=173>SOLAN</option><option value=295>SOLAPUR</option><option value=589>SONBHADRA</option><option value=154>SONIPAT</option><option value=19>SONITPUR</option><option value=1>SOUTH ANDAMAN</option><option value=394>SOUTH DELHI</option><option value=288>SOUTH GARO HILLS</option><option value=122>SOUTH GOA</option><option value=490>SOUTH SIKKIM</option><option value=504>SOUTH TRIPURA</option><option value=624>SOUTH TWENTY FOUR PARGANAS</option><option value=396>SOUTH WEST DELHI</option><option value=13>SRIKAKULAM</option><option value=207>SRINAGAR</option><option value=427>SUBARNAPUR</option><option value=553>SULTANPUR</option><option value=407>SUNDARGARH</option><option value=94>SUPAUL</option><option value=124>SURAT</option><option value=138>SURENDRANAGAR</option><option value=103>SURGUJA</option><option value=281>TAMENGLONG</option><option value=145>TAPI</option><option value=445>TARN TARAN</option><option value=55>TAWANG</option><option value=616>TEHRI GARHWAL</option><option value=289>THANE</option><option value=525>THANJAVUR</option><option value=148>THE DANGS</option><option value=527>THE NILGIRIS</option><option value=526>THENI</option><option value=528>THIRUNELVELI</option><option value=529>THIRUVALLUR</option><option value=271>THIRUVANANTHAPURAM</option><option value=530>THIRUVANNAMALAI</option><option value=531>THIRUVARUR</option><option value=532>THOOTHUKUDI</option><option value=276>THOUBAL</option><option value=266>THRISSUR</option><option value=354>TIKAMGARH</option><option value=23>TINSUKIA</option><option value=56>TIRAP</option><option value=533>TIRUCHIRAPALLI</option><option value=534>TIRUPPUR</option><option value=478>TONK</option><option value=385>TUENSANG</option><option value=254>TUMKUR</option><option value=460>UDAIPUR</option><option value=37>UDALGURI</option><option value=612>UDHAM SINGH NAGAR</option><option value=215>UDHAMPUR</option><option value=256>UDUPI</option><option value=341>UJJAIN</option><option value=279>UKHRUL</option><option value=380>UMARIA</option><option value=175>UNA</option><option value=569>UNNAO</option><option value=57>UPPER SIANG</option><option value=58>UPPER SUBANSIRI</option><option value=637>UTTAR DINAJPUR</option><option value=619>UTTARKASHI</option><option value=125>VADODARA</option><option value=96>VAISHALI</option><option value=139>VALSAD</option><option value=556>VARANASI</option><option value=535>VELLORE</option><option value=352>VIDISHA</option><option value=536>VILLUPURAM</option><option value=537>VIRUDHUNAGAR</option><option value=14>VISHAKHAPATNAM</option><option value=15>VIZIANAGARAM</option><option value=502>WARANGAL</option><option value=318>WARDHA</option><option value=320>WASHIM</option><option value=262>WAYANAD</option><option value=98>WEST CHAMPARAN</option><option value=395>WEST DELHI</option><option value=283>WEST GARO HILLS</option><option value=16>WEST GODAVARI</option><option value=59>WEST KAMENG</option><option value=285>WEST KHASI HILLS</option><option value=343>WEST NIMAR</option><option value=60>WEST SIANG</option><option value=491>WEST SIKKIM</option><option value=503>WEST TRIPURA</option><option value=387>WOKHA</option><option value=257>YADGIR</option><option value=157>YAMUNANAGAR</option><option value=433>YANAM</option><option value=304>YAVATMAL</option><option value=389>ZUNHEBOTO</option>        	
+	        	</select></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Pincode </strong><span style="color:red">*</span></td>
+				<td hstyle="width: 27%"><input type="text" id="Cpincode" name="Cpincode" onkeypress="return isNumberKey(event)" maxlength="6" class="input-field"  ></td>
+			
+				<td style="width: 25%"><strong style="font-size: 15px;">Pincode </strong></td>
+				<td width="34%" ><input type="text" name="PPincode" onkeypress="return isNumberKey(event)" maxlength="6" id="PAddress6" class="input-field" ></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Telephone </strong><span style="color:red">*</span></td>
+				<td hstyle="width: 27%"><input type="text" id="MobileNo" name="MobileNo" maxlength="15" class="input-field"></td>
+			
+				<td height="40" style="width: 21%"><strong style="font-size: 15px;">Telephone </strong><span style="color:red">*</span></td>
+				<td hstyle="width: 27%"><input type="text" id="MobileNo" name="MobileNo2" maxlength="15" class="input-field"></td>
+			</tr>
+
+		</table>   
+	</div>		
+
+	<br><br>
+	
+	<div class="form-style-2">
+		<div>	
+			<table  width="80%" border="0" cellspacing="0" align="center">
+				<tr>
+					<td height="30" valign="middle" style="color:#C60000; font-size:16px; font-weight:bold">Physical</td>
+				</tr>
+	
+				<tr>
+					<td width="23%">
+					<label style="font-size:15px" class="control-label" for="field_0">Did you undergo any major operation in last 3 years?<span style="color:red;">*</span></label></td>
+					<td width="21%" align="center"><label class="control-label" for="field_0"> Yes</label></td>
+					<td width="21%" align="center"><label class="control-label" for="field_0"> No</label></td>
+				</tr>
+			
+				<tr>
+					<td width="23%" height="50"></td>
+						
+					<td width="21%" align="center">&nbsp;
+					<input type="radio" name="physic" id="physic" value="Yes"  class="form-control"></td>
+					<td width="21%" align="center">&nbsp;&nbsp;
+					<input type="radio" name="physic" id="physic" value="No"  class="form-control"></td>
+					<td width="7%" style="margin:0 0 0 0;">
+					<input type="hidden" name="hidcount" value="1">
+					<input type="hidden" name="hidcount1" value="1">
+				</td>
+				</tr>
+			</table>	
+		</div>
+	</div>
+	
+	<br><br>                        
+    <!--                    
+	<div class="form-style-2">
+		<div id="Education">
+			<table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2">	
+				<tr>
+       				<td colspan="9" style="color:#C60000; font-size:16px; font-weight:bold" ><p align="left">Education</p></td>
+       			</tr>
+					
+						<tr style="background:#e7e7e7;" >
+               				<td width="40" class="auto-style1"><b><p align="center">Degree</p></b></td>
+               				<td width="100" class="auto-style1"><b><p align="center">University / College / School</p></b></td>
+               				<td width="100" ><p align="center"><b>Main Subjects / Subjects Specialised</b></p></td>
+               				<td width="40" ><p align="center"><b>From</b></p></td>
+            			    <td width="40"><p align="center"><b>To</b></p></td>
+               				<td width="40"><p align="center"></p></td>
+               			</tr>
+	
+		 				<tr>
+		 					<td width="40" style="height: 30px"><p align="center" >
+		 					<select name="de[]" id="candeg[]" style="width:70px; height: 30px" class="input-field" >
+		 					<option value="">Select Degree</option>
+		        			<option value=DEG002>B.A.</option><option value=DEG003>B.A.M.S.</option><option value=DEG001>B.Arch</option><option value=DEG004>B.B.A.</option><option value=DEG056>B.B.M.</option><option value=DEG006>B.C.A.</option><option value=DEG005>B.Com.</option><option value=DEG007>B.D.S.</option><option value=DEG008>B.Des. / B.D.</option><option value=DEG010>B.E. / B.Tech.</option><option value=DEG009>B.Ed.</option><option value=DEG012>B.F.Sc./ B.Sc. (Fisheries).</option><option value=DEG013>B.H.M.S.</option><option value=DEG015>B.Lib. / B.Lib.Sc.</option><option value=DEG016>B.M.C. / B.M.M.</option><option value=DEG018>B.Nursing</option><option value=DEG020>B.P.Ed.</option><option value=DEG021>B.P.T.</option><option value=DEG019>B.Pharm / B.Pharma.</option><option value=DEG022>B.Sc.</option><option value=DEG024>B.V.Sc. & A.H. / B.V.Sc</option><option value=DEG011>BFA / BVA</option><option value=DEG023>BSW / B.A. (SW)</option><option value=DEG057>CAIIB</option><option value=DEG029>D.M.</option><option value=DEG055>Diploma</option><option value=DEG054>HSC</option><option value=DEG014>L.L.B.</option><option value=DEG041>L.L.M.</option><option value=DEG031>M.A.</option><option value=DEG030>M.Arch.</option><option value=DEG032>M.B.A.</option><option value=DEG017>M.B.B.S.</option><option value=DEG035>M.C.A.</option><option value=DEG033>M.Ch.</option><option value=DEG034>M.Com.</option><option value=DEG025>M.D.</option><option value=DEG026>M.D. (Homoeopathy)</option><option value=DEG036>M.D.S.</option><option value=DEG037>M.Des./ M.Design.</option><option value=DEG039>M.E./ M.Tech.</option><option value=DEG038>M.Ed.</option><option value=DEG042>M.Lib./ M.Lib.Sc.</option><option value=DEG043>M.M.C / M.M.M.</option><option value=DEG046>M.P.Ed. / M.P.E.</option><option value=DEG047>M.P.T.</option><option value=DEG044>M.Pharm</option><option value=DEG045>M.Phil.</option><option value=DEG051>M.S.</option><option value=DEG049>M.S.W. / M.A. (SW)</option><option value=DEG048>M.Sc.</option><option value=DEG050>M.Sc. (Agriculture)</option><option value=DEG052>M.V.Sc.</option><option value=DEG040>MFA / MVA</option><option value=DEG058>MS</option><option value=DEG999>Others</option><option value=DEG028>Ph.D.</option><option value=DEG027>Pharm.D</option><option value=DEG053>SSLC</option>   						  
+							</select>
+							</p></td>
+							
+							<td width="100" style="height: 30px"><p align="center" ><input type="text" name="un[]" id="caninst[]" value="" style="height:30px;width:180px;" class="input-field"  /></p></td>
+							<td width="100" style="height: 30px"><p align="center"><input type="text" name="ma[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"  /></p></td>
+							
+							<td width="40" style="height: 30px">
+							<select name="from2[]" id="CFrom[]" style="width:80px; height: 30px" class="input-field" >
+		 					<option value="">Select Year</option>
+		        			<option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> 					
+							</Select></td>
+							
+							<td width="40" style="height: 30px">
+							<select name="to2[]" id="CTo[]" style="width:80px; height: 30px" class="input-field" >
+		 					<option value="">Select Year</option>
+		        			<option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> 					
+                                </select>select></td>
+
+													
+							<td width="40" style="height: 30px"><p align="center">
+							<input type="hidden" name="hidcountEd" value="1">
+							<input type="hidden" name="hidcountEd1" value="1">
+							<input type="hidden" value="0" id="theValue" name="hidvalE" />
+							<input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementEdu();" style="width:60px;" />
+							<input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu" /></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+			</div>-->
+<!-- Demo Sample insertion -->
+
+	<div class="form-style-2">
+		<div id="Education">
+			<table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2">	
+				<tr>
+       				<td colspan="9" style="color:#C60000; font-size:16px; font-weight:bold" ><p align="left">Education</p></td>
+       			</tr>
+					
+						<tr style="background:#e7e7e7;" >
+               				<td width="40" class="auto-style1"><b><p align="center">Degree</p></b></td>
+               				<td width="100" class="auto-style1"><b><p align="center">University / College / School</p></b></td>
+               				<td width="100" ><p align="center"><b>Main Subjects / Subjects Specialised</b></p></td>
+               				<td width="40" ><p align="center"><b>From</b></p></td>
+            			    <td width="40"><p align="center"><b>To</b></p></td>
+               				<td width="40"><p align="center"></p></td>
+               			</tr>
+	
+		 				<tr>
+		 					<td width="40" style="height: 30px"><p align="center" >
+		 					<select name="deg[]" id="candeg[]" style="width:70px; height: 30px" class="input-field" required >
+		 					<option value="">Select Degree</option>
+		        			<option value=DEG002>B.A.</option><option value=DEG003>B.A.M.S.</option><option value=DEG001>B.Arch</option><option value=DEG004>B.B.A.</option><option value=DEG056>B.B.M.</option><option value=DEG006>B.C.A.</option><option value=DEG005>B.Com.</option><option value=DEG007>B.D.S.</option><option value=DEG008>B.Des. / B.D.</option><option value=DEG010>B.E. / B.Tech.</option><option value=DEG009>B.Ed.</option><option value=DEG012>B.F.Sc./ B.Sc. (Fisheries).</option><option value=DEG013>B.H.M.S.</option><option value=DEG015>B.Lib. / B.Lib.Sc.</option><option value=DEG016>B.M.C. / B.M.M.</option><option value=DEG018>B.Nursing</option><option value=DEG020>B.P.Ed.</option><option value=DEG021>B.P.T.</option><option value=DEG019>B.Pharm / B.Pharma.</option><option value=DEG022>B.Sc.</option><option value=DEG024>B.V.Sc. & A.H. / B.V.Sc</option><option value=DEG011>BFA / BVA</option><option value=DEG023>BSW / B.A. (SW)</option><option value=DEG057>CAIIB</option><option value=DEG029>D.M.</option><option value=DEG055>Diploma</option><option value=DEG054>HSC</option><option value=DEG014>L.L.B.</option><option value=DEG041>L.L.M.</option><option value=DEG031>M.A.</option><option value=DEG030>M.Arch.</option><option value=DEG032>M.B.A.</option><option value=DEG017>M.B.B.S.</option><option value=DEG035>M.C.A.</option><option value=DEG033>M.Ch.</option><option value=DEG034>M.Com.</option><option value=DEG025>M.D.</option><option value=DEG026>M.D. (Homoeopathy)</option><option value=DEG036>M.D.S.</option><option value=DEG037>M.Des./ M.Design.</option><option value=DEG039>M.E./ M.Tech.</option><option value=DEG038>M.Ed.</option><option value=DEG042>M.Lib./ M.Lib.Sc.</option><option value=DEG043>M.M.C / M.M.M.</option><option value=DEG046>M.P.Ed. / M.P.E.</option><option value=DEG047>M.P.T.</option><option value=DEG044>M.Pharm</option><option value=DEG045>M.Phil.</option><option value=DEG051>M.S.</option><option value=DEG049>M.S.W. / M.A. (SW)</option><option value=DEG048>M.Sc.</option><option value=DEG050>M.Sc. (Agriculture)</option><option value=DEG052>M.V.Sc.</option><option value=DEG040>MFA / MVA</option><option value=DEG058>MS</option><option value=DEG999>Others</option><option value=DEG028>Ph.D.</option><option value=DEG027>Pharm.D</option><option value=DEG053>SSLC</option>   						  
+							</select>
+							</p></td>
+							
+							<td width="100" style="height: 30px"><p align="center" ><input type="text" name="un[]" id="caninst[]" value="" style="height:30px;width:180px;" class="input-field"  required/></p></td>
+							<td width="100" style="height: 30px"><p align="center"><input type="text" name="ma[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"  required/></p></td>
+							
+							<td width="40" style="height: 30px">
+							<select name="from2[]" id="CFrom[]" style="width:80px; height: 30px" class="input-field" required>
+		 					<option value="">Select Year</option>
+		        			<option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> 					
+							</Select></td>
+							
+							<td width="40" style="height: 30px">
+							<select name="to2[]" id="CTo[]" style="width:80px; height: 30px" class="input-field" required>
+		 					<option value="">Select Year</option>
+		        			<option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> 					
+							</Select></td>
+
+													
+							<td width="40" style="height: 30px"><p align="center">
+							<input type="hidden" name="hidcountEd" value="1">
+							<input type="hidden" name="hidcountEd1" value="1">
+							<input type="hidden" value="0" id="theValue" name="hidvalE" />
+							<input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementEdu();" style="width:60px;" />
+							<input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu" /></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+			</div>
+			
+
+<!-- End Demo Sample insertion -->
+
+		<div class="form-style-2">
+	<div id="Establishment">
+		<table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2">	
+				
+				<tr style="background:#e7e7e7;" >
+					<td width="100" ><p align="center"><b>Apprenticeship Training Name of Establishment?</b></p></td>
+					<td width="100" ><p align="center"><b>Kind of work</b></p></td>
+       				<td width="40" ><p align="center"><b>From</b></p></td>
+    			    <td width="40"><p align="center"><b>To</b></p></td>
+       				<td width="40"><p align="center"></p></td>
+       			</tr>
+
+ 				<tr>
+					<td width="100" style="height: 30px"><p align="center" ><input type="text" name="t1[]" id="caninst[]" value="" style="height:30px;width:180px;" class="input-field" required /></p></td>
+					<td width="100" style="height: 30px"><p align="center"><input type="text" name="k1[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"  required/></p></td>
+					
+					<td width="40" style="height: 30px">
+					<select name="from1[]" id="CFrom[]" style="width:80px; height: 30px" class="input-field" required>
+ 					<option value="" required>Select Year</option>
+        			<option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> 					
+					</select></td>
+					
+					<td width="40" style="height: 30px">
+					<select name="to1[]" id="CTo[]" style="width:80px; height: 30px" class="input-field" required>
+ 					<option value="">Select Year</option>
+        			<option value=1960>1960</option><option value=1961>1961</option><option value=1962>1962</option><option value=1963>1963</option><option value=1964>1964</option><option value=1965>1965</option><option value=1966>1966</option><option value=1967>1967</option><option value=1968>1968</option><option value=1969>1969</option><option value=1970>1970</option><option value=1971>1971</option><option value=1972>1972</option><option value=1973>1973</option><option value=1974>1974</option><option value=1975>1975</option><option value=1976>1976</option><option value=1977>1977</option><option value=1978>1978</option><option value=1979>1979</option><option value=1980>1980</option><option value=1981>1981</option><option value=1982>1982</option><option value=1983>1983</option><option value=1984>1984</option><option value=1985>1985</option><option value=1986>1986</option><option value=1987>1987</option><option value=1988>1988</option><option value=1989>1989</option><option value=1990>1990</option><option value=1991>1991</option><option value=1992>1992</option><option value=1993>1993</option><option value=1994>1994</option><option value=1995>1995</option><option value=1996>1996</option><option value=1997>1997</option><option value=1998>1998</option><option value=1999>1999</option><option value=2000>2000</option><option value=2001>2001</option><option value=2002>2002</option><option value=2003>2003</option><option value=2004>2004</option><option value=2005>2005</option><option value=2006>2006</option><option value=2007>2007</option><option value=2008>2008</option><option value=2009>2009</option><option value=2010>2010</option><option value=2011>2011</option><option value=2012>2012</option><option value=2013>2013</option><option value=2014>2014</option><option value=2015>2015</option><option value=2016>2016</option><option value=2017>2017</option><option value=2018>2018</option><option value=2019>2019</option><option value=2020>2020</option> 					
+					</select></td>
+
+											
+					<td width="40" style="height: 30px"><p align="center">
+					<input type="hidden" name="hidcountEd" value="1">
+					<input type="hidden" name="hidcountEd1" value="1">
+					<input type="hidden" value="0" id="theValue" name="hidvalE" />
+					<input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementEst();" style="width:60px;" />
+					<input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu" /></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+	</div>
+
+	
+    <br><br>
+    
+    <!-- Dont Touch -->
+	<div class="form-style-2">
+			<table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2">	
+ 				<tr>
+					<input type="hidden" name="hidcountE" value="1">
+					<input type="hidden" name="hidcountE1" value="1">
+					<input type="hidden" value="0" id="theValue" name="hidvalE" />
+					<input type="hidden" value="0" id="hidvalExp" name="hidvalExp" />
+				</tr>
+			</table>
+		<br />
+	</div>
+	<br><br>
+		
+	<div class="form-style-2">	
+		
+		<table width="80%" style="border:1px solid #A5A4A4; padding-bottom:3px;" border="0" cellpadding="5" cellspacing="0"  align="center">
+			<tr style="background:#e7e7e7;" height="30" >
+				<td colspan="4" height="25" valign="middle" style="color:#C60000; font-size:16px; font-weight:bold">Employment History</td>
+			</tr>  
+   		    
+   		    <tr>
+				<td height="40" style="width: 21%"><span style="font-size: 15px;">Which job do you consider was most intresting and Why?</span><span style="color:red"></span></td>
+				<td style="width: 27%"><input type="text" name="Interest" id="Interest"  class="input-field" ></td>
+			
+				<td style="width: 25%"><span style="font-size: 15px;">What salary do you expect?</span></td>
+				<td width="34%" ><input type="number" name="salary" id="Salary1"  class="input-field" ></td>
+			</tr>
+			
+			<tr>
+				<td height="40" style="width: 21%"><span style="font-size: 15px;">When can you join us if selected?</span><span style="color:red">*</span></td>
+				<td><select id="Joining" name="joining_date">
+                    <option value="Join">---Select Week---</option>
+                    <option value="This week">This week</option>
+                    <option value="Next week">Next week</option>
+                    <option value="After next week">After next week</option>
+                   </select>
+                </td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="form-style-2">
+		<div id="Relation">
+			<table cellspacing="0" cellpadding="0" width="80%" align="center" class="auto-style2">	
+				<tr>
+	   				<td colspan="9" style="color:#C60000; font-size:16px; font-weight:bold" ><p align="left">Relatives Known</p></td>
+	   			</tr>
+					
+				<tr style="background:#e7e7e7;" >
+	   				<td width="100" class="auto-style1"><b><p align="center">Name</p></b></td>
+	   				<td width="100" class="auto-style1"><b><p align="center">Designation</p></b></td>
+	   				<td width="100" class="auto-style1"><b><p align="center">Work Location</p></b></td>
+	   				<td width="40"><p align="center"></p></td>
+	   			</tr>
+	
+	 			<tr>
+					<td width="100" style="height: 30px"><p align="center" ><input type="text" name="item_name[]" id="RName[]" value="" style="height:30px;width:180px;" class="input-field" required /></p></td>
+					<td width="100" style="height: 30px"><p align="center"><input type="text" name="item_price[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"  required/></p></td>
+					<td width="100" style="height: 30px"><p align="center"><input type="text" name="item_size[]" id="canspe[]" value="" style="height:30px;width:180px;" class="input-field"  required/></p></td>
+					
+					<td width="40" style="height: 30px"><p align="center">
+					<input type="hidden" name="hidcountEd" value="1">
+					<input type="hidden" name="hidcountEd1" value="1">
+					<input type="hidden" value="0" id="theValue" name="hidvalE" />
+					<input type="button" class="butten2" name="buttenE" value="Add" onClick="javascript:addElementRel();" style="width:60px;" />
+					<input type="hidden" value="0" id="hidvalEdu" name="hidvalEdu" /></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+	</div>
+		
+	<br><br>
+
+	<div class="form-style-2">
+		<table width="80%" border="0" align="center">
+			<tr>
+				<td width="13%"> Upload Photo <span style="color:red">*</span><br></td>
+				<td width="35%"><input type="file" name="upImage" id="upImage" placeholder="Upload"></td>
+			</tr>
+			<tr>
+				<td width="13%"> Upload Signature <span style="color:red">*</span><br></td>
+				<td width="35%"><input type="file" name="upSign" id="upSign" placeholder="Upload"></td>
+			</tr>
+			<tr>
+				<td width="13%"> Upload Aadhaar <span style="color:red">*</span><br></td>
+				<td width="35%"><input type="file" name="upCertificate" id="upCertificate" placeholder="Upload"></td>
+			</tr>
+			<tr>
+				<td width="13%"> Upload Certificates <span style="color:red">*</span><br></td>
+				<td width="35%"><input type="file" name="upCertificates" id="upCertificates" placeholder="Upload"></td>
+			</tr>
+		</table><br>
+	</div>
+		
+	<table width="100%" align="center" border="0">
+    	<tr>
+    		<td  width="100%" class="auto-style3"><p align="center">
+    		<input  type="submit" value="Submit" id="Submit" name="Submit" class="w3-button w3-border w3-hover-blue" style="width: 102px; height: 40px;" >
+    		</p></td>
+    	</tr>
+    </table>
+                    
+             
+</form> 
+         
+</body>
+
+</html>
